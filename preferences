@@ -1,0 +1,11 @@
+<?xml version='1.0'?>
+
+<workbook>
+	<preferences>
+		<color-palette name="Ejemplo Categorico" type="regular">
+			<color>#FFC6C2</color>
+			<color>#FAE9DA</color>
+			<color>#C3E0DD</color>
+		</color-palette>
+	</preferences>	
+</workbook>
