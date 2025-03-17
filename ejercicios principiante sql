@@ -1,0 +1,55 @@
+--Veamos la tabla
+--SELECT * from empleados;
+--Contemos los registros de la tabla
+--SELECT COUNT(*) from empleados;
+--¿Cuántos empleados hay en total?
+--select count(DISTINCT(nombre)) from empleados;
+--Columna nombres
+--select nombre from empleados;
+--¿Cuántas áreas hay?
+--select count(DISTINCT(area)) FROM empleados;
+--¿Cuántos empleados hay en cada área?
+--SELECT area, count(nombre) from empleados
+--group by area;
+--SELECT * from empleados;
+--¿Cuántos empleados son hombres y cuántos son mujeres?
+--SELECT genero, count(nombre) AS total_empleados from empleados
+--GROUP by genero;
+--¿Cuál es el total de los sueldos de todos los empleados?
+--select SUM(sueldo) from empleados;
+--select MIN(sueldo) from empleados;
+--select MAX(sueldo) from empleados;
+--select AVG(sueldo) from empleados;
+--¿Cuál es el sueldo total pagado en cada área?
+--select area,sum(sueldo) from empleados
+--group by area;
+--¿Cuál es el sueldo total pagado a empleados hombres y mujeres?
+--select genero,sum(sueldo) from empleados
+--GROUP By genero;
+--¿Cuál es el sueldo promedio de los empleados?
+--SELECT avg(sueldo) FROM empleados;
+--¿Cuál es el sueldo promedio en cada área?
+--select area, avg(sueldo) from empleados
+--group by area;
+--¿Cuál es el sueldo más alto y el más bajo de la empresa?
+--select max(sueldo),avg(sueldo),min(sueldo) from empleados
+--¿Cuál es el sueldo más alto en cada área?
+--select area, max(sueldo) from empleados
+--group by area;
+--¿Cuáles son los empleados con un sueldo mayor a $4000?
+--select count(nombre) from empleados
+--where sueldo>4000;
+--¿Cuáles son los empleados que fueron contratados entre 2018 y 2022?
+--select nombre, fecha_contratacion from empleados
+--where fecha_contratacion BETWEEN '2018-01-01' AND '2022-12-31';
+--¿Cuáles son los empleados cuyo nombre comienza con "J"?
+--SELECT nombre FROM empleados
+--where nombre like 'J%';
+--¿Cuáles son los 5 empleados con los sueldos más altos?
+--SELECT nombre,sueldo from empleados
+--ORDER by sueldo asc
+--LIMIT 3
+--¿Cuáles son los empleados ordenados por fecha de contratación (más antiguos primero)?
+--SELECT nombre,fecha_contratacion FROM empleados
+--ORDER by fecha_contratacion asc
+--limit 3
