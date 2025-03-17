@@ -1,0 +1,55 @@
+-- Tabla Empleados
+CREATE TABLE empleados (
+    nombre VARCHAR(100),
+    area VARCHAR(50),
+    genero CHAR(1) CHECK (genero IN ('M', 'F')),
+    fecha_contratacion DATE,
+    sueldo DECIMAL(10,2)
+);
+
+-- Insertar registros
+INSERT INTO empleados (nombre, area, genero, fecha_contratacion, sueldo) VALUES
+('Juan Pérez', 'IT', 'M', '2020-05-10', 3200.00),
+('María Pérez', 'Marketing', 'F', '2018-09-15', 2800.50),
+('Carlos Ramírez', 'Finanzas', 'M', '2019-06-22', 4000.75),
+('Ana Ramírez', 'Recursos Humanos', 'F', '2021-02-11', 3100.00),
+('Pedro Sánchez', 'IT', 'M', '2017-12-01', 4500.00),
+('Laura Sánchez', 'Marketing', 'F', '2022-03-18', 2600.00),
+('José Martínez', 'Ventas', 'M', '2015-08-30', 3500.00),
+('Sofía Martínez', 'Finanzas', 'F', '2019-04-25', 3900.00),
+('José Díaz', 'IT', 'M', '2020-07-20', 3300.00),
+('Lucía Díaz', 'Recursos Humanos', 'F', '2016-11-05', 2900.00),
+('Alejandro Ortega', 'Ventas', 'M', '2023-01-10', 3100.00),
+('Elena Ortega', 'IT', 'F', '2020-06-12', 3200.00),
+('Manuel Rivas', 'Marketing', 'M', '2019-10-15', 2700.50),
+('Gabriela Rivas', 'Finanzas', 'F', '2018-12-20', 4200.00),
+('Fernando Medina', 'Ventas', 'M', '2021-05-05', 3400.00),
+('Andrea Medina', 'Recursos Humanos', 'F', '2017-09-14', 3000.00),
+('David Castro', 'IT', 'M', '2016-06-28', 4600.00),
+('Paula Castro', 'Marketing', 'F', '2022-07-09', 2900.00),
+('Hugo Flores', 'Finanzas', 'M', '2019-08-22', 4100.00),
+('Marta Flores', 'Ventas', 'F', '2018-04-30', 3700.00),
+('Pablo Morales', 'IT', 'M', '2020-11-18', 3400.00),
+('Verónica Morales', 'Recursos Humanos', 'F', '2017-01-12', 3100.00),
+('Santiago Pérez', 'Ventas', 'M', '2021-08-23', 3200.00),
+('Natalia Pérez', 'Marketing', 'F', '2023-02-11', 2500.00),
+('Javier Estrada', 'Finanzas', 'M', '2015-10-08', 4300.00),
+('Daniela Estrada', 'Recursos Humanos', 'F', '2022-05-27', 2800.00),
+('José Mendoza', 'IT', 'M', '2019-03-10', 3700.00),
+('Rocío Mendoza', 'Marketing', 'F', '2018-07-21', 2600.00),
+('Emilio Vázquez', 'Ventas', 'M', '2020-09-30', 3300.00),
+('Patricia Vázquez', 'Finanzas', 'F', '2017-06-18', 4000.00),
+('Luis Romero', 'IT', 'M', '2015-05-25', 4800.00),
+('Carmen Romero', 'Recursos Humanos', 'F', '2021-12-14', 2900.00),
+('Gerardo Torres', 'Marketing', 'M', '2019-02-05', 2750.00),
+('Beatriz Torres', 'Finanzas', 'F', '2018-10-16', 3900.00),
+('Gonzalo Paredes', 'Ventas', 'M', '2023-03-22', 3100.00),
+('Isabel Paredes', 'IT', 'F', '2020-08-09', 3500.00),
+('Ricardo Ávila', 'Recursos Humanos', 'M', '2017-11-30', 3050.00),
+('Valeria Ávila', 'Marketing', 'F', '2021-04-17', 2700.00),
+('Mauricio Peña', 'Finanzas', 'M', '2016-05-14', 4100.00),
+('Silvia Peña', 'Ventas', 'F', '2018-02-08', 3600.00);
+
+-- Consultar los datos insertados
+SELECT * FROM empleados;
+
